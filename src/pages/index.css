@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,900;1,100;1,700&display=swap');
+@import url("../vendor/normalize.css");
+@import url("../blocks/page.css");
+@import url("../blocks/header.css");
+@import url("../blocks/image.css");
+@import url("../blocks/grid.css");
+@import url("../blocks/container.css");
+@import url("../blocks/section.css");
+@import url("../blocks/icons.css");
+@import url("../blocks/icon.css");
+@import url("../blocks/lists.css");
+@import url("../blocks/list.css");
+@import url("../blocks/link.css");
+@import url("../blocks/footer.css");
+
+html {
+  background-image: linear-gradient(#80FFE8, #83BCFF, #97D2FB, #ECCBD9);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+}
+
+/*
+
+Font Styles
+Thin 100 Italic
+ExtraLight 200
+Regular 400
+SemiBold 600
+Bold 700 Italic
+Black 900
+
+font-family: 'Raleway', sans-serif;
+
+*/

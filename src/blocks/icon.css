@@ -1,0 +1,79 @@
+.icon_new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 5vw;
+  height: 7vw;
+}
+
+.icon {
+  object-fit: fill;
+  width: 4vw;
+  height: 4vw;
+}
+
+.icon__desc {
+  max-width: 75px;
+  text-align: center;
+  opacity: 0;
+  font-style: italic;
+  font-weight: 600;
+  transition: opacity .3s ease-in-out;
+  font-size: 1vw;
+}
+
+.icon_new:hover .icon__desc {
+  opacity: 1;
+}
+
+.icon__arrows {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -50vh;
+}
+
+.icon_arrow {
+  border: none;
+  background-color: rgba(0,0,0,0);
+}
+
+.icon_arrow:hover {
+  color: #fff;
+}
+
+.icon_left-arrow {
+  opacity: 1;
+  position: relative;
+  left: -6vw;
+}
+
+.icon_right-arrow {
+  opacity: 1;
+  position: relative;
+  right: -6vw;
+}
+
+@media screen and (max-width: 720px) {
+  .icon__arrows {
+    top: -13vh;
+  }
+
+  .icon_arrow {
+    transform: scale(.3);
+  }
+
+  .icon_new {
+    width: 15vw;
+    height: 18vw;
+  }
+
+  .icon {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .icon__desc {
+    font-size: 2vw;
+  }
+}

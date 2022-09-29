@@ -1,0 +1,28 @@
+.container-right {
+  animation: rightSlideIn 3s linear, fadeIn 4s linear;
+}
+
+.container-left {
+  animation: leftSlideIn 3s linear, fadeIn 4s linear;
+}
+
+.container-bottom {
+  animation: bottomSlideIn 4s linear, fadeIn 5s linear;
+}
+
+.container:hover .section {
+  animation: bounce 0.5s linear 1;
+}
+
+.container_alt {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-height: 100vh;
+}
+
+@media screen and (max-width: 720px) {
+  .container_alt {
+    grid-column-end: 2;
+    max-height: 135vw;
+  }
+}

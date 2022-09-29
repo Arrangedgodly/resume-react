@@ -1,0 +1,24 @@
+.section {
+  font-size: 2.7344vw;
+  font-weight: 600;
+}
+
+.section_alt {
+  text-align: center;
+}
+
+.section__text {
+  font-size: 1.5625vw;
+  text-align: end;
+}
+
+@media screen and (max-width: 720px) {
+  .section {
+    font-size: 4.86vw;
+  }
+
+  .section__text {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+}
