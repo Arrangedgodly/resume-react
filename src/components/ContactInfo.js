@@ -1,6 +1,12 @@
 import '../blocks/container.css';
+import '../blocks/section.css';
 import '../blocks/list.css';
+import '../blocks/link.css';
 import phone from '../images/phone.svg';
+import envelope from '../images/envelope.svg';
+import linkedIn from '../images/linkedin.svg';
+import github from '../images/github.svg';
+import link from '../images/link.svg';
 
 
 function ContactInfo() {
@@ -10,13 +16,13 @@ function ContactInfo() {
           <ul class="list list_l">
             <li class="list__item">
               <a href="tel:+3032609261" class="link">
-                <img src="./images/phone.svg" alt="phone" class="list__icon" />
+                <img src={phone} alt="phone" class="list__icon" />
                 303-260-9261</a>
             </li>
             <li class="list__item">
               <a href="mailto:graydonwasil@gmail.com" class="link">
                 <img
-                  src="./images/envelope.svg"
+                  src={envelope}
                   alt="envelope"
                   class="list__icon"
                 />
@@ -29,7 +35,7 @@ function ContactInfo() {
                 class="link"
               >
                 <img
-                  src="./images/linkedin.svg"
+                  src={linkedIn}
                   alt="linkedin"
                   class="list__icon"
                 />
@@ -43,7 +49,7 @@ function ContactInfo() {
                 class="link"
               >
                 <img
-                  src="./images/github.svg"
+                  src={github}
                   alt="github"
                   class="list__icon"
                 />
@@ -56,7 +62,7 @@ function ContactInfo() {
                 target="_blank"
                 class="link"
               >
-                <img src="./images/link.svg" alt="link" class="list__icon" />
+                <img src={link} alt="link" class="list__icon" />
                 Portfolio
               </a>
             </li>
