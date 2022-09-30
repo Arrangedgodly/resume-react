@@ -1,25 +1,62 @@
+import React from 'react';
+import {projects} from '../utils/constants';
+
+function checkZero(val) {
+    if (val === 0) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function checkLast(arr, val) {
+    if (val === (arr.length - 1)) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
 
 function Projects() {
-  return (
-    <div class="container container_alt  container-bottom">
-          <h2 class="section section_alt">PROJECTS</h2>
-          <ul class="list list_flex_project"></ul>
-          <template id="project">
-            <li class="list_sm list_project">
-              <iframe src="" alt="" class="image_l"></iframe>
-              <a href="" target="_blank" class="link link-alt">
-                <p class="list_sm_alt list_sm_alt_projects"></p>
-              </a>
-            </li>
-          </template>
-          <div class="icon__arrows">
-            <button class="icon_arrow icon_left-arrow" type="button">
-              <i class="fa-solid fa-arrow-left fa-5x"></i>
-            </button>
-            <button class="icon_arrow icon_right-arrow" type="button">
-              <i class="fa-solid fa-arrow-right fa-5x"></i>
-            </button>
-          </div>
+    const [projectCount, setProjectCount] = React.useState(0);
+    const [isOpened, setIsOpened] = React.useState(false);
+
+    const incrementProjects = () => {setProjectCount(projectCount + 1)};
+    const decrementProjects = () => {setProjectCount(projectCount - 1)};
+
+    const toggleContainer = () => {
+        setIsOpened(!isOpened);
+      }
+
+    return (
+        <div className="container container_alt container-left">
+            <button className="section section_alt" type='button' onClick={toggleContainer}>PROJECTS</button>
+            {isOpened && (
+                            <>
+                            <ul className="list list_flex_project">
+                            {
+                                (
+                                    <li className="list_sm list_project" key={`project-${projectCount}`}>
+                                        <iframe src={projects[projectCount].link} alt={projects[projectCount].name} className="image_l"></iframe>
+                                        <a href={projects[projectCount].link} target="_blank" className="link link-alt">{projects[projectCount].name}
+                                            <p className="list_sm_alt list_sm_alt_projects">{projects[projectCount].desc}</p>
+                                        </a>
+                                    </li>
+                                )
+                            }
+                            </ul>
+                            <div className="icon__arrows">
+                                <button className={checkZero(projectCount) ? "icon_arrow icon_left-arrow" : "icon_arrow icon_left-arrow icon_hidden"} type="button" onClick={decrementProjects} disabled={checkZero(projectCount) ? false : true}>
+                                Prev
+                                </button>
+                                <button className={checkLast(projects, projectCount) ? "icon_arrow icon_right-arrow" : "icon_arrow icon_right-arrow icon_hidden" } type="button" onClick={incrementProjects} disabled={checkLast(projects, projectCount) ? false : true}>
+                                Next
+                                </button>
+                            </div>
+                            </>
+            )}
         </div>
   );
 }

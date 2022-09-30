@@ -1,6 +1,10 @@
 .section {
   font-size: 2.7344vw;
   font-weight: 600;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  margin: 1vh auto;
+  display: flex;
 }
 
 .section_alt {
@@ -10,6 +14,10 @@
 .section__text {
   font-size: 1.5625vw;
   text-align: end;
+}
+
+.section__text-alt {
+  text-align: center;
 }
 
 @media screen and (max-width: 720px) {

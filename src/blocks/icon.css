@@ -30,12 +30,13 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -50vh;
+  top: -70vh;
 }
 
 .icon_arrow {
   border: none;
   background-color: rgba(0,0,0,0);
+  font-size: 3vw;
 }
 
 .icon_arrow:hover {
@@ -52,6 +53,10 @@
   opacity: 1;
   position: relative;
   right: -6vw;
+}
+
+.icon_hidden {
+  opacity: 0;
 }
 
 @media screen and (max-width: 720px) {

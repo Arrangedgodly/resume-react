@@ -5,6 +5,10 @@ li {
 .list {
   list-style: none;
   padding: 0;
+  width: 100vw;
+  margin: 1vh auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .list_flex {
@@ -30,7 +34,7 @@ li {
 
 .list_l {
   font-size: 2.344vw;
-  text-align: start;
+  text-align: center;
 }
 
 .list_m {
@@ -68,8 +72,8 @@ li {
   font-style: italic;
   max-width: 400px;
   display: block;
-  text-align: end;
-  margin: 0 0 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .list_sm_education {
@@ -105,6 +109,10 @@ li {
 }
 
 @media screen and (max-width: 720px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
   .list_l {
     text-align: center;
     font-size: 4.167vw;
