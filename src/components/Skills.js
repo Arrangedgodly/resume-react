@@ -12,7 +12,7 @@ function Skills() {
         <div className="container container-left container_alt">
         <button className="section" type='button' onClick={toggleContainer}>PROFESSIONAL SKILLS</button>
         {isOpened && (
-          <ul className="list icons">
+          <ul className="list list_alt icons">
           {
             icons.map((icon, i) => (
               <li className="icon_new" key={`icon-${i}`}>

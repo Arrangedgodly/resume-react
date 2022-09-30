@@ -7,3 +7,9 @@
   width: 100%;
   margin: auto;
 }
+
+@media screen and (max-width: 720px) {
+  .icons {
+    column-gap: 10px;
+  }
+}
