@@ -7,7 +7,7 @@ function Accomplishments() {
   }
 
     return (
-        <div className="container container-left container_alt">
+        <div className="container container-bottom container_alt">
           <button className="section" type="button" onClick={toggleContainer}>ACCOMPLISHMENTS</button>
           {isOpened && (
             <ul className="list list_flex section__text list_l">

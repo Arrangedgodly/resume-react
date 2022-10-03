@@ -9,7 +9,7 @@ function Skills() {
   }
 
     return (
-        <div className="container container-left container_alt">
+        <div className="container container-bottom container_alt">
         <button className="section" type='button' onClick={toggleContainer}>PROFESSIONAL SKILLS</button>
         {isOpened && (
           <ul className="list list_alt icons">

@@ -105,8 +105,8 @@ const projects = [
   },
   {
     name: "Portfolio Project",
-    link: "https://arrangedgodly.com/portfolio-project/",
-    desc: "the original iteration of my portfolio project"
+    link: "https://arrangedgodly.com/portfolio/",
+    desc: "the original iteration of my portfolio project, recreated in react"
   },
   {
     name: "Arranged Godly",

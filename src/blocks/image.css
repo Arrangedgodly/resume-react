@@ -63,7 +63,7 @@
 
 @keyframes bottomSlideIn {
   0% {
-    transform: translate(0, 400%);
+    transform: translate(0, 1000%);
   }
   100% {
     transform: translate(0, 0);

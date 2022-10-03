@@ -7,7 +7,7 @@ function Education() {
   }
 
   return (
-    <div className="container container_alt container-left">
+    <div className="container container_alt container-bottom">
     <button className="section section_alt" type="button" onClick={toggleContainer}>EDUCATION</button>
     {isOpened && (
       <div className="lists">

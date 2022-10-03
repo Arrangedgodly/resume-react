@@ -7,7 +7,7 @@ function AboutMe() {
   }
 
   return (
-    <div className="container container_alt container-left">
+    <div className="container container_alt container-bottom">
           <button className="section" type="button" onClick={toggleContainer}>WHO AM I?</button>
           {isOpened && (
             <p className="section__text section__text-alt">
