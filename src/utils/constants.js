@@ -84,6 +84,11 @@ const icons = [
 
 const projects = [
   {
+    name: "Rhymebook",
+    link: "https://arrangedgodly.com/rhymebook-react/",
+    desc: "An API Powered Notes App that suggests future terms for your lyrics"
+  },
+  {
     name: "Artoffish",
     link: "https://arrangedgodly.com/art-gallery/",
     desc: "An art gallery dedicated to AI generated art pieces, sourced via my premium MidJourney account"
